@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylessheets" href="styles.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <div class="quiz-header">
+            <h1>QuickMind Quiz</h1>
+            <p>Test your knowledge, one question at a time.</p>
+        </div>
+
+        <div class="quiz-info">
+            <span id="questionNumber">Question 1 of 10</span>
+            <span id="timer">Time: 15s</span>
+        </div>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <div class="question-section">
+            <h2 id="question">Question will appear here</h2>
+
+            <div id="answerButtons" class="answer-buttons">
+                <!-- Answer buttons will be added by JavaScript -->
+            </div>
+        </div>
+
+        <button id="nextButton" class="next-button">Next Question</button>
+
+        <div id="resultBox" class="result-box hidden">
+            <h2>Quiz Completed!</h2>
+            <p>Your Score</p>
+            <div id="finalScore">0 / 10</div>
+            <p id="resultMessage"></p>
+            <button id="restartButton" class="restart-button">
+                Restart Quiz
+            </button>
+        </div>
+
+    </div>
+
+    <script src="sheets.js"></script>
+</body>
+</html>
